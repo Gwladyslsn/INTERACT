@@ -21,7 +21,6 @@ class Game {
 
   createScene() {
     this.scene = new THREE.Scene();
-    this.scene.background = new THREE.Color("skyblue");
   }
   createCamera() {
     const aspectRatio = this.canvasWidth / this.canvasHeight;
@@ -51,10 +50,12 @@ class Game {
     const geometry = new THREE.BoxGeometry(10, 10, 10);
     const material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
     this.cube = new THREE.Mesh(geometry, material);
+    this.cube.position.set(0, 50, 0);
     this.scene.add(this.cube);
   }
   createRender() {
     this.renderer = new THREE.WebGLRenderer();
+    this.renderer.setClearColor(0x000000, 0);
     this.renderer.setSize(this.canvasWidth, this.canvasHeight);
     this.canvas.appendChild(this.renderer.domElement);
   }

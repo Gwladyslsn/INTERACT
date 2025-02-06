@@ -8,9 +8,9 @@ Créer une scène interactive ou l'utilisateur peut :
 - supprimer des objets
 
 1. Initialisation
-   []créer une scène, camera, rendu webGL
-   []ajouter lumière directionnelle et lumiere ambiante
-   []afficher un sol et un cube
+   [x]créer une scène, camera, rendu webGL
+   [x]ajouter lumière directionnelle et lumiere ambiante
+   [x]afficher un cube
 
 2. ajout interface user
    []Créer un bouton pour "ajouter un nouvel objet"
