@@ -25,8 +25,8 @@ class Game {
   createCamera() {
     const aspectRatio = this.canvasWidth / this.canvasHeight;
     this.camera = new THREE.PerspectiveCamera(45, aspectRatio, 0.1, 1000);
-    this.camera.position.x = 25;
-    this.camera.position.y = 100;
+    this.camera.position.x = 200;
+    this.camera.position.y = 200;
     this.camera.position.z = 200;
   }
 
@@ -35,11 +35,9 @@ class Game {
     this.light = new THREE.PointLight(0xffffff, 1, 100);
     this.light.position.set(50, 50, 50);
     this.scene.add(this.light);
-
     //lumiere ambiante
-    this.ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Lumière ambiante douce
+    this.ambientLight = new THREE.AmbientLight(0xffffff, 0); // Lumière ambiante douce
     this.scene.add(this.ambientLight);
-
     //direction de la lumiere
     this.directionalLight = new THREE.DirectionalLight(0xffffff, 1);
     this.directionalLight.position.set(10, 40, 50);
@@ -48,9 +46,10 @@ class Game {
 
   createForm() {
     const geometry = new THREE.BoxGeometry(10, 10, 10);
-    const material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
+    const texture = new THREE.TextureLoader().load("./img/wood.jpg");
+    const material = new THREE.MeshBasicMaterial({ map: texture });
     this.cube = new THREE.Mesh(geometry, material);
-    this.cube.position.set(0, 50, 0);
+    //this.cube.position.set(10, 10, 10);
     this.scene.add(this.cube);
   }
   createRender() {

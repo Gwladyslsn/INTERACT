@@ -14,8 +14,10 @@ Créer une scène interactive ou l'utilisateur peut :
 
 2. ajout interface user
    []Créer un bouton pour "ajouter un nouvel objet"
-   []Créer un menu pour changer propriétés objet (couleur, taille)
-   []Créer un bouton "supprimer" pour supp un objet
+
+   - []proposer choix entre 3 formes ? (cube, sphere, pyramid)
+     []Créer un menu pour changer propriétés objet (couleur, taille)
+     []Créer un bouton "supprimer" pour supp un objet
 
 3. Gestion des interactions
    []Deplacement libre de la camera avec clavier et/ou souris
