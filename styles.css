@@ -1,23 +1,28 @@
 body {
-  background: linear-gradient(0deg, #face8d 50%, aquamarine 100%);
+  background: linear-gradient(0deg, blue 10%, aquamarine 100%);
+}
+
+button {
+  background-color: aquamarine;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  top: 90%;
+  transform: translate(-50%, -50%);
 }
 
 .addForm {
-  background-color: rgba(237, 110, 110, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-  position: fixed;
-  top: 90%;
   left: 10%;
-  transform: translate(-50%, -50%);
 }
 
 .suppForm {
-  background-color: rgba(237, 110, 110, 0.5);
+  left: 90%;
+}
+.proposal {
+  top: 100%;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
-  position: fixed;
-  top: 90%;
-  left: 90%;
-  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
