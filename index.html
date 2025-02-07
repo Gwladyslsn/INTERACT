@@ -12,7 +12,25 @@
         <button type="button" class="addForm js-addForm">
           Ajouter une forme
         </button>
-        <div class="proposal js-proposal">Choix de la forme</div>
+        <div class="proposal js-proposal">
+          Choix de la forme :
+
+          <select class="shapeType js-shapeType">
+            <option value="cube">Cube</option>
+            <option value="sphere">Sphere</option>
+            <option value="cylinder">Cylinder</option>
+            <option value="plane">Plane</option>
+          </select>
+
+          <select class="shapeColor js-shapeColor">
+            <option value="bleu">Bleu</option>
+            <option value="Rouge">rouge</option>
+            <option value="jaune">jaune</option>
+            <option value="vert">vert</option>
+          </select>
+
+          <button class="addProposal">Ajouter ma forme</button>
+        </div>
       </div>
       <button type="button" class="suppForm js-suppForm">
         Supprimer une forme

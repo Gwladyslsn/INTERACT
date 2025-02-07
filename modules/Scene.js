@@ -25,9 +25,9 @@ class Game {
   createCamera() {
     const aspectRatio = this.canvasWidth / this.canvasHeight;
     this.camera = new THREE.PerspectiveCamera(45, aspectRatio, 0.1, 1000);
-    this.camera.position.x = 200;
-    this.camera.position.y = 200;
-    this.camera.position.z = 200;
+    this.camera.position.x = 50;
+    this.camera.position.y = 50;
+    this.camera.position.z = 50;
   }
 
   createLight() {
